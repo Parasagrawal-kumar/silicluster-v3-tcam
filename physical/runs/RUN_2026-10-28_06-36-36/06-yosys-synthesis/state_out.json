@@ -1,0 +1,14 @@
+{
+    "json_h": "/foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/05-yosys-jsonheader/tcam_switchable_ablation.h.json",
+    "nl": "/foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/06-yosys-synthesis/tcam_switchable_ablation.nl.v",
+    "metrics": {
+        "design__lint_error__count": 0,
+        "design__lint_timing_construct__count": 0,
+        "design__lint_warning__count": 495,
+        "design__inferred_latch__count": 0,
+        "design__instance__count": 325,
+        "design__instance__area": 4402.9728,
+        "design__instance_unmapped__count": 0,
+        "synthesis__check_error__count": 0
+    }
+}

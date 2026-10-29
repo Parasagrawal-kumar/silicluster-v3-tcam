@@ -1,0 +1,9 @@
+
+22. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\tcam_switchable_ablation.\i' from process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:180$195'.
+No latch inferred for signal `\tcam_switchable_ablation.\prio_addr' from process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:180$195'.
+No latch inferred for signal `\tcam_switchable_ablation.\prio_valid' from process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:180$195'.
+No latch inferred for signal `\tcam_switchable_ablation.\found' from process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:180$195'.
+No latch inferred for signal `\tcam_switchable_ablation.\b' from process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:169$66'.
+No latch inferred for signal `\tcam_switchable_ablation.\word_match' from process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:169$66'.
+No latch inferred for signal `\tcam_switchable_ablation.\s' from process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:169$66'.

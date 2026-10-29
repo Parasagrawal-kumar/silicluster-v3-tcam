@@ -1,0 +1,1664 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69 (git sha1 9f75ca1f9, Release, GNU /usr/bin/c++ 13.3.0)
+Found gzip magic in file `/foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib.gz', decompressing using zlib.
+
+1. Executing Liberty frontend: /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib.gz
+Imported 428 cell types from liberty file.
+Found gzip magic in file `/foss/pdks/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib.gz', decompressing using zlib.
+
+2. Executing Liberty frontend: /foss/pdks/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib.gz
+Imported 1 cell types from liberty file.
+Found gzip magic in file `/foss/pdks/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped_pad_tt_025C_1v80_3v30.lib.gz', decompressing using zlib.
+
+3. Executing Liberty frontend: /foss/pdks/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped_pad_tt_025C_1v80_3v30.lib.gz
+Imported 1 cell types from liberty file.
+Found gzip magic in file `/foss/pdks/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vddio_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib.gz', decompressing using zlib.
+
+4. Executing Liberty frontend: /foss/pdks/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vddio_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib.gz
+Imported 1 cell types from liberty file.
+Found gzip magic in file `/foss/pdks/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssio_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib.gz', decompressing using zlib.
+
+5. Executing Liberty frontend: /foss/pdks/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssio_hvc_clamped_pad_tt_025C_1v80_3v30_3v30.lib.gz
+Imported 1 cell types from liberty file.
+Found gzip magic in file `/foss/pdks/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_tt_tt_025C_1v80_3v30.lib.gz', decompressing using zlib.
+
+6. Executing Liberty frontend: /foss/pdks/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_tt_tt_025C_1v80_3v30.lib.gz
+Imported 1 cell types from liberty file.
+Found gzip magic in file `/foss/pdks/sky130A/libs.ref/sky130_fd_io/lib/slices_stubs.lib.gz', decompressing using zlib.
+
+7. Executing Liberty frontend: /foss/pdks/sky130A/libs.ref/sky130_fd_io/lib/slices_stubs.lib.gz
+Imported 2 cell types from liberty file.
+Found gzip magic in file `/foss/pdks/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__analog_stubs.lib.gz', decompressing using zlib.
+
+8. Executing Liberty frontend: /foss/pdks/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__analog_stubs.lib.gz
+Imported 5 cell types from liberty file.
+[INFO] Using SDC file '/foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/06-yosys-synthesis/synthesis.abc.sdc' for ABC…
+
+9. Executing Verilog-2005 frontend: /foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v
+Parsing SystemVerilog input from `/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v' to AST representation.
+Storing AST representation for module `$abstract\tcam_switchable_ablation'.
+Successfully finished Verilog frontend.
+
+10. Executing HIERARCHY pass (managing design hierarchy).
+
+11. Executing AST frontend in derive mode using pre-parsed AST for module `\tcam_switchable_ablation'.
+Generating RTLIL representation for module `\tcam_switchable_ablation'.
+
+11.1. Analyzing design hierarchy..
+Top module:  \tcam_switchable_ablation
+
+11.2. Analyzing design hierarchy..
+Top module:  \tcam_switchable_ablation
+Removing unused module `$abstract\tcam_switchable_ablation'.
+Removed 1 unused modules.
+Renaming module tcam_switchable_ablation to tcam_switchable_ablation.
+
+12. Executing ATTRMAP pass (move or copy attributes).
+
+13. Executing TRIBUF pass.
+
+14. Executing HIERARCHY pass (managing design hierarchy).
+
+14.1. Analyzing design hierarchy..
+Top module:  \tcam_switchable_ablation
+
+14.2. Analyzing design hierarchy..
+Top module:  \tcam_switchable_ablation
+Removed 0 unused modules.
+
+15. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+16. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 2 switch rules as full_case in process $proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:193$212 in module tcam_switchable_ablation.
+Marked 8 switch rules as full_case in process $proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:180$195 in module tcam_switchable_ablation.
+Marked 1 switch rules as full_case in process $proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:146$38 in module tcam_switchable_ablation.
+Marked 3 switch rules as full_case in process $proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:121$19 in module tcam_switchable_ablation.
+Marked 2 switch rules as full_case in process $proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:84$12 in module tcam_switchable_ablation.
+Marked 2 switch rules as full_case in process $proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:69$8 in module tcam_switchable_ablation.
+Marked 1 switch rules as full_case in process $proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:54$7 in module tcam_switchable_ablation.
+Removed a total of 0 dead cases.
+
+17. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 5 redundant assignments.
+Promoted 23 assignments to connections.
+
+18. Executing PROC_INIT pass (extract init attributes).
+
+19. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \rst in `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:193$212'.
+Found async reset \rst in `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:121$19'.
+Found async reset \rst in `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:84$12'.
+Found async reset \rst in `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:69$8'.
+Found async reset \rst in `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:54$7'.
+
+20. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~17 debug messages>
+
+21. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:193$212'.
+     1/5: $0\search_done_r[0:0]
+     2/5: $0\match_valid_r[0:0]
+     3/5: $0\match_addr_r[2:0]
+     4/5: $0\key_lat[3:0]
+     5/5: $0\req_pending[0:0]
+Creating decoders for process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:180$195'.
+     1/24: $8\prio_addr[2:0]
+     2/24: $8\prio_valid[0:0]
+     3/24: $8\found[0:0]
+     4/24: $7\prio_addr[2:0]
+     5/24: $7\prio_valid[0:0]
+     6/24: $7\found[0:0]
+     7/24: $6\prio_addr[2:0]
+     8/24: $6\prio_valid[0:0]
+     9/24: $6\found[0:0]
+    10/24: $5\prio_addr[2:0]
+    11/24: $5\prio_valid[0:0]
+    12/24: $5\found[0:0]
+    13/24: $4\prio_addr[2:0]
+    14/24: $4\prio_valid[0:0]
+    15/24: $4\found[0:0]
+    16/24: $3\prio_addr[2:0]
+    17/24: $3\prio_valid[0:0]
+    18/24: $3\found[0:0]
+    19/24: $2\prio_addr[2:0]
+    20/24: $2\prio_valid[0:0]
+    21/24: $2\found[0:0]
+    22/24: $1\prio_addr[2:0]
+    23/24: $1\prio_valid[0:0]
+    24/24: $1\found[0:0]
+Creating decoders for process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:169$66'.
+Creating decoders for process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:146$38'.
+     1/4: $1$lookahead\mask_flat$37[31:0]$47
+     2/4: $1$bitselwrite$pos$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:149$6[31:0]$45
+     3/4: $1$lookahead\data_flat$36[31:0]$46
+     4/4: $1$bitselwrite$pos$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:148$5[31:0]$44
+Creating decoders for process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:121$19'.
+     1/10: $3$lookahead\valid$18[7:0]$28
+     2/10: $3$bitselwrite$pos$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:137$4[2:0]$27
+     3/10: $2$lookahead\valid$18[7:0]$26
+     4/10: $2$bitselwrite$pos$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:137$4[2:0]$25
+     5/10: $1$lookahead\valid$18[7:0]$23
+     6/10: $1$bitselwrite$pos$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:137$4[2:0]$22
+     7/10: $0\wr_mask_lat[3:0]
+     8/10: $0\wr_data_lat[3:0]
+     9/10: $0\wr_addr_lat[2:0]
+    10/10: $0\wr_pending[0:0]
+Creating decoders for process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:84$12'.
+     1/3: $0\shift_done_r[0:0]
+     2/3: $0\bit_cnt[3:0]
+     3/3: $0\shift_reg[11:0]
+Creating decoders for process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:69$8'.
+     1/1: $0\pump_phase[0:0]
+Creating decoders for process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:54$7'.
+     1/2: $0\mode_s2[0:0]
+     2/2: $0\mode_s1[0:0]
+
+22. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\tcam_switchable_ablation.\i' from process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:180$195'.
+No latch inferred for signal `\tcam_switchable_ablation.\prio_addr' from process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:180$195'.
+No latch inferred for signal `\tcam_switchable_ablation.\prio_valid' from process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:180$195'.
+No latch inferred for signal `\tcam_switchable_ablation.\found' from process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:180$195'.
+No latch inferred for signal `\tcam_switchable_ablation.\b' from process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:169$66'.
+No latch inferred for signal `\tcam_switchable_ablation.\word_match' from process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:169$66'.
+No latch inferred for signal `\tcam_switchable_ablation.\s' from process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:169$66'.
+
+23. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\tcam_switchable_ablation.\req_pending' using process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:193$212'.
+  created $adff cell `$procdff$380' with positive edge clock and positive level reset.
+Creating register for signal `\tcam_switchable_ablation.\key_lat' using process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:193$212'.
+  created $adff cell `$procdff$383' with positive edge clock and positive level reset.
+Creating register for signal `\tcam_switchable_ablation.\match_addr_r' using process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:193$212'.
+  created $adff cell `$procdff$386' with positive edge clock and positive level reset.
+Creating register for signal `\tcam_switchable_ablation.\match_valid_r' using process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:193$212'.
+  created $adff cell `$procdff$389' with positive edge clock and positive level reset.
+Creating register for signal `\tcam_switchable_ablation.\search_done_r' using process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:193$212'.
+  created $adff cell `$procdff$392' with positive edge clock and positive level reset.
+Creating register for signal `\tcam_switchable_ablation.\data_flat' using process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:146$38'.
+  created $dff cell `$procdff$393' with positive edge clock.
+Creating register for signal `\tcam_switchable_ablation.\mask_flat' using process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:146$38'.
+  created $dff cell `$procdff$394' with positive edge clock.
+Creating register for signal `\tcam_switchable_ablation.$bitselwrite$pos$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:148$5' using process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:146$38'.
+  created $dff cell `$procdff$395' with positive edge clock.
+Creating register for signal `\tcam_switchable_ablation.$bitselwrite$pos$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:149$6' using process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:146$38'.
+  created $dff cell `$procdff$396' with positive edge clock.
+Creating register for signal `\tcam_switchable_ablation.$lookahead\data_flat$36' using process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:146$38'.
+  created $dff cell `$procdff$397' with positive edge clock.
+Creating register for signal `\tcam_switchable_ablation.$lookahead\mask_flat$37' using process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:146$38'.
+  created $dff cell `$procdff$398' with positive edge clock.
+Creating register for signal `\tcam_switchable_ablation.\wr_pending' using process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:121$19'.
+  created $adff cell `$procdff$401' with positive edge clock and positive level reset.
+Creating register for signal `\tcam_switchable_ablation.\wr_addr_lat' using process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:121$19'.
+  created $adff cell `$procdff$404' with positive edge clock and positive level reset.
+Creating register for signal `\tcam_switchable_ablation.\wr_data_lat' using process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:121$19'.
+  created $adff cell `$procdff$407' with positive edge clock and positive level reset.
+Creating register for signal `\tcam_switchable_ablation.\wr_mask_lat' using process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:121$19'.
+  created $adff cell `$procdff$410' with positive edge clock and positive level reset.
+Creating register for signal `\tcam_switchable_ablation.\valid' using process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:121$19'.
+  created $adff cell `$procdff$413' with positive edge clock and positive level reset.
+Creating register for signal `\tcam_switchable_ablation.$bitselwrite$pos$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:137$4' using process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:121$19'.
+  created $adff cell `$procdff$416' with positive edge clock and positive level reset.
+Creating register for signal `\tcam_switchable_ablation.$lookahead\valid$18' using process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:121$19'.
+  created $adff cell `$procdff$419' with positive edge clock and positive level reset.
+Creating register for signal `\tcam_switchable_ablation.\shift_reg' using process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:84$12'.
+  created $adff cell `$procdff$422' with positive edge clock and positive level reset.
+Creating register for signal `\tcam_switchable_ablation.\bit_cnt' using process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:84$12'.
+  created $adff cell `$procdff$425' with positive edge clock and positive level reset.
+Creating register for signal `\tcam_switchable_ablation.\shift_done_r' using process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:84$12'.
+  created $adff cell `$procdff$428' with positive edge clock and positive level reset.
+Creating register for signal `\tcam_switchable_ablation.\pump_phase' using process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:69$8'.
+  created $adff cell `$procdff$431' with positive edge clock and positive level reset.
+Creating register for signal `\tcam_switchable_ablation.\mode_s1' using process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:54$7'.
+  created $adff cell `$procdff$434' with positive edge clock and positive level reset.
+Creating register for signal `\tcam_switchable_ablation.\mode_s2' using process `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:54$7'.
+  created $adff cell `$procdff$437' with positive edge clock and positive level reset.
+
+24. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+25. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 2 empty switches in `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:193$212'.
+Removing empty process `tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:193$212'.
+Found and cleaned up 8 empty switches in `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:180$195'.
+Removing empty process `tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:180$195'.
+Removing empty process `tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:169$66'.
+Found and cleaned up 1 empty switch in `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:146$38'.
+Removing empty process `tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:146$38'.
+Found and cleaned up 3 empty switches in `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:121$19'.
+Removing empty process `tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:121$19'.
+Found and cleaned up 2 empty switches in `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:84$12'.
+Removing empty process `tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:84$12'.
+Found and cleaned up 1 empty switch in `\tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:69$8'.
+Removing empty process `tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:69$8'.
+Removing empty process `tcam_switchable_ablation.$proc$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:54$7'.
+Cleaned up 17 empty switches.
+
+26. Executing CHECK pass (checking for obvious problems).
+Checking module tcam_switchable_ablation...
+Found and reported 0 problems.
+
+27. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tcam_switchable_ablation.
+<suppressed ~34 debug messages>
+
+28. Executing FLATTEN pass (flatten design).
+
+29. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tcam_switchable_ablation.
+
+30. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tcam_switchable_ablation..
+Removed 13 unused cells and 172 unused wires.
+<suppressed ~17 debug messages>
+
+31. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tcam_switchable_ablation.
+
+32. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tcam_switchable_ablation'.
+Computing hashes of 244 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 239 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 237 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 236 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+<suppressed ~24 debug messages>
+Removed a total of 8 cells.
+
+33. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tcam_switchable_ablation..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+      Replacing known input bits on port A of cell $procmux$356: \wr_pending -> 1'1
+      Replacing known input bits on port A of cell $procmux$359: \wr_pending -> 1'0
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$326.
+Removed 1 multiplexer ports.
+<suppressed ~74 debug messages>
+
+34. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tcam_switchable_ablation.
+Performed a total of 0 changes.
+
+35. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tcam_switchable_ablation'.
+Computing hashes of 235 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 234 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 233 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 232 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 231 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 230 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 229 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 228 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+<suppressed ~21 debug messages>
+Removed a total of 7 cells.
+
+36. Executing OPT_DFF pass (perform DFF optimizations).
+
+37. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tcam_switchable_ablation..
+Removed 0 unused cells and 16 unused wires.
+<suppressed ~1 debug messages>
+
+38. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tcam_switchable_ablation.
+
+39. Rerunning OPT passes. (Maybe there is more to do…)
+
+40. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tcam_switchable_ablation..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~66 debug messages>
+
+41. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tcam_switchable_ablation.
+Performed a total of 0 changes.
+
+42. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tcam_switchable_ablation'.
+Computing hashes of 228 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Removed a total of 0 cells.
+
+43. Executing OPT_DFF pass (perform DFF optimizations).
+
+44. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tcam_switchable_ablation..
+
+45. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tcam_switchable_ablation.
+
+46. Executing FSM pass (extract and optimize FSM).
+
+46.1. Executing FSM_DETECT pass (finding FSMs in design).
+Not marking tcam_switchable_ablation.match_addr_r as FSM state register:
+    Register is connected to module port.
+    Users of register don't seem to benefit from recoding.
+
+46.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+46.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+46.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tcam_switchable_ablation..
+
+46.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+46.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+46.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+46.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+47. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tcam_switchable_ablation.
+
+48. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tcam_switchable_ablation'.
+Computing hashes of 228 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Removed a total of 0 cells.
+
+49. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tcam_switchable_ablation..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~66 debug messages>
+
+50. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tcam_switchable_ablation.
+Performed a total of 0 changes.
+
+51. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tcam_switchable_ablation'.
+Computing hashes of 228 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Removed a total of 0 cells.
+
+52. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $procdff$425 ($adff) from module tcam_switchable_ablation (D = $procmux$369_Y, Q = \bit_cnt).
+Adding EN signal on $procdff$422 ($adff) from module tcam_switchable_ablation (D = { \shift_reg [10:0] \serial_in }, Q = \shift_reg).
+Adding EN signal on $procdff$413 ($adff) from module tcam_switchable_ablation (D = $or$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:137$35_Y, Q = \valid).
+Adding EN signal on $procdff$410 ($adff) from module tcam_switchable_ablation (D = \shift_reg [3:0], Q = \wr_mask_lat).
+Adding EN signal on $procdff$407 ($adff) from module tcam_switchable_ablation (D = \shift_reg [7:4], Q = \wr_data_lat).
+Adding EN signal on $procdff$404 ($adff) from module tcam_switchable_ablation (D = \shift_reg [10:8], Q = \wr_addr_lat).
+Adding EN signal on $procdff$394 ($dff) from module tcam_switchable_ablation (D = $or$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:149$65_Y, Q = \mask_flat).
+Adding EN signal on $procdff$393 ($dff) from module tcam_switchable_ablation (D = $or$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:148$56_Y, Q = \data_flat).
+Adding EN signal on $procdff$389 ($adff) from module tcam_switchable_ablation (D = $0\match_valid_r[0:0], Q = \match_valid_r).
+Adding EN signal on $procdff$386 ($adff) from module tcam_switchable_ablation (D = \prio_addr, Q = \match_addr_r).
+Adding EN signal on $procdff$383 ($adff) from module tcam_switchable_ablation (D = \search_key, Q = \key_lat).
+Adding EN signal on $procdff$380 ($adff) from module tcam_switchable_ablation (D = $0\req_pending[0:0], Q = \req_pending).
+
+53. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tcam_switchable_ablation..
+Removed 15 unused cells and 15 unused wires.
+<suppressed ~16 debug messages>
+
+54. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tcam_switchable_ablation.
+<suppressed ~2 debug messages>
+
+55. Rerunning OPT passes. (Maybe there is more to do…)
+
+56. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tcam_switchable_ablation..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~43 debug messages>
+
+57. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tcam_switchable_ablation.
+Performed a total of 0 changes.
+
+58. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tcam_switchable_ablation'.
+Computing hashes of 224 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 221 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 219 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+<suppressed ~15 debug messages>
+Removed a total of 5 cells.
+
+59. Executing OPT_DFF pass (perform DFF optimizations).
+
+60. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tcam_switchable_ablation..
+Removed 0 unused cells and 5 unused wires.
+<suppressed ~1 debug messages>
+
+61. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tcam_switchable_ablation.
+
+62. Rerunning OPT passes. (Maybe there is more to do…)
+
+63. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tcam_switchable_ablation..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~43 debug messages>
+
+64. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tcam_switchable_ablation.
+Performed a total of 0 changes.
+
+65. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tcam_switchable_ablation'.
+Computing hashes of 219 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Removed a total of 0 cells.
+
+66. Executing OPT_DFF pass (perform DFF optimizations).
+
+67. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tcam_switchable_ablation..
+
+68. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tcam_switchable_ablation.
+
+69. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 12) from FF cell tcam_switchable_ablation.$auto$ff.cc:337:slice$439 ($adffe).
+Removed top 3 bits (of 4) from port B of cell tcam_switchable_ablation.$add$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:97$14 ($add).
+Converting cell tcam_switchable_ablation.$neg$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:137$33 ($neg) from signed to unsigned.
+Removed top 1 bits (of 4) from port A of cell tcam_switchable_ablation.$neg$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:137$33 ($neg).
+Removed top 27 bits (of 33) from port A of cell tcam_switchable_ablation.$neg$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:149$63 ($neg).
+Converting cell tcam_switchable_ablation.$neg$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:149$63 ($neg) from signed to unsigned.
+Removed top 1 bits (of 6) from port A of cell tcam_switchable_ablation.$neg$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:149$63 ($neg).
+Removed top 2 bits (of 3) from mux cell tcam_switchable_ablation.$procmux$294 ($mux).
+Removed top 2 bits (of 3) from wire tcam_switchable_ablation.$2\prio_addr[2:0].
+Removed top 1 bits (of 4) from wire tcam_switchable_ablation.s_waddr.
+Removed top 1 bits (of 12) from wire tcam_switchable_ablation.shift_reg.
+
+70. Executing PEEPOPT pass (run peephole optimizers).
+
+71. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tcam_switchable_ablation..
+Removed 0 unused cells and 3 unused wires.
+<suppressed ~1 debug messages>
+
+72. Executing BOOTH pass (map to Booth multipliers).
+Mapped 0 multipliers.
+
+73. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module tcam_switchable_ablation:
+  creating $macc model for $add$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:97$14 ($add).
+  creating $macc model for $neg$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:137$33 ($neg).
+  creating $macc model for $neg$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:149$63 ($neg).
+  creating $alu model for $macc $neg$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:149$63.
+  creating $alu model for $macc $neg$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:137$33.
+  creating $alu model for $macc $add$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:97$14.
+  creating $alu cell for $add$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:97$14: $auto$alumacc.cc:548:replace_alu$475
+  creating $alu cell for $neg$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:137$33: $auto$alumacc.cc:548:replace_alu$478
+  creating $alu cell for $neg$/foss/designs/silicluster_v3_tcam_switchable/rtl/tcam_switchable_ablation.v:149$63: $auto$alumacc.cc:548:replace_alu$481
+  created 3 $alu and 0 $macc cells.
+
+74. Executing ARITH_TREE pass.
+
+75. Executing SHARE pass (SAT-based resource sharing).
+
+76. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tcam_switchable_ablation.
+
+77. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tcam_switchable_ablation'.
+Computing hashes of 219 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Removed a total of 0 cells.
+
+78. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tcam_switchable_ablation..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~43 debug messages>
+
+79. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tcam_switchable_ablation.
+Performed a total of 0 changes.
+
+80. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tcam_switchable_ablation'.
+Computing hashes of 219 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Removed a total of 0 cells.
+
+81. Executing OPT_DFF pass (perform DFF optimizations).
+
+82. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tcam_switchable_ablation..
+
+83. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tcam_switchable_ablation.
+
+84. Executing MEMORY pass.
+
+84.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+84.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+84.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+84.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+84.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+84.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tcam_switchable_ablation..
+
+84.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+84.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+84.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tcam_switchable_ablation..
+
+84.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+85. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tcam_switchable_ablation..
+
+86. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tcam_switchable_ablation.
+<suppressed ~19 debug messages>
+
+87. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tcam_switchable_ablation'.
+Computing hashes of 211 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Removed a total of 0 cells.
+
+88. Executing OPT_DFF pass (perform DFF optimizations).
+
+89. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tcam_switchable_ablation..
+Removed 0 unused cells and 8 unused wires.
+<suppressed ~1 debug messages>
+
+90. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+91. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tcam_switchable_ablation.
+
+92. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tcam_switchable_ablation'.
+Computing hashes of 211 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Removed a total of 0 cells.
+
+93. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tcam_switchable_ablation..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~15 debug messages>
+
+94. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tcam_switchable_ablation.
+    Consolidated identical input bits for $mux cell $procmux$285:
+      Old ports: A={ 2'00 $2\prio_addr[2:0] }, B=3'010, Y=$3\prio_addr[2:0]
+      New ports: A={ 1'0 $2\prio_addr[2:0] }, B=2'10, Y=$3\prio_addr[2:0] [1:0]
+      New connections: $3\prio_addr[2:0] [2] = 1'0
+  Optimizing cells in module \tcam_switchable_ablation.
+    Consolidated identical input bits for $mux cell $procmux$276:
+      Old ports: A=$3\prio_addr[2:0], B=3'011, Y=$4\prio_addr[2:0]
+      New ports: A=$3\prio_addr[2:0] [1:0], B=2'11, Y=$4\prio_addr[2:0] [1:0]
+      New connections: $4\prio_addr[2:0] [2] = 1'0
+  Optimizing cells in module \tcam_switchable_ablation.
+Performed a total of 2 changes.
+
+95. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tcam_switchable_ablation'.
+Computing hashes of 211 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Removed a total of 0 cells.
+
+96. Executing OPT_SHARE pass.
+
+97. Executing OPT_DFF pass (perform DFF optimizations).
+
+98. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tcam_switchable_ablation..
+
+99. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tcam_switchable_ablation.
+
+100. Rerunning OPT passes. (Maybe there is more to do…)
+
+101. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tcam_switchable_ablation..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~15 debug messages>
+
+102. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tcam_switchable_ablation.
+Performed a total of 0 changes.
+
+103. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tcam_switchable_ablation'.
+Computing hashes of 211 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Removed a total of 0 cells.
+
+104. Executing OPT_SHARE pass.
+
+105. Executing OPT_DFF pass (perform DFF optimizations).
+
+106. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tcam_switchable_ablation..
+
+107. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tcam_switchable_ablation.
+
+108. Executing TECHMAP pass (map to technology primitives).
+
+108.1. Executing Verilog-2005 frontend: /foss/tools/yosys/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/foss/tools/yosys/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+108.2. Continuing TECHMAP pass.
+Using template $paramod$98fdd47e93ebd6ee7b239851ea6e44b4909054e6\_90_alu for cells of type $alu.
+Using template $paramod$025d767fc934a3e7d59a671de523743ebaa07759\_90_alu for cells of type $alu.
+Using template $paramod$32a7b7b86c07519b7537abc18e96f0331f97914d\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $reduce_bool.
+Using extmapper simplemap for cells of type $adffe.
+Using extmapper simplemap for cells of type $reduce_and.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $dffe.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $and.
+Using template $paramod$constmap:82d13b1faa4b21cb1487e5b4ddefba1164cb15a1$paramod$40ccfd5a7f1418017a9af25543d0c43a198b5946\_90_shift_shiftx for cells of type $shift.
+Using extmapper simplemap for cells of type $logic_and.
+Using template $paramod$constmap:96db1c8882733f290d4b3012b59af5a420ef500e$paramod$d26ceb004b1c92f0df605bf9b3fc829369ac4a34\_90_shift_shiftx for cells of type $shift.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'1
+  Constant input on bit 1 of port A: 1'1
+  Constant input on bit 2 of port A: 1'1
+  Constant input on bit 3 of port A: 1'1
+Creating constmapped module `$paramod$constmap:79ee240afdfd622112cdf973c4ee8d97acf4a125$paramod$d26ceb004b1c92f0df605bf9b3fc829369ac4a34\_90_shift_shiftx'.
+
+108.19. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:79ee240afdfd622112cdf973c4ee8d97acf4a125$paramod$d26ceb004b1c92f0df605bf9b3fc829369ac4a34\_90_shift_shiftx..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 2/2 on $mux $procmux$818.
+    dead port 2/2 on $mux $procmux$824.
+    dead port 2/2 on $mux $procmux$830.
+    dead port 2/2 on $mux $procmux$836.
+    dead port 2/2 on $mux $procmux$842.
+    dead port 2/2 on $mux $procmux$848.
+Removed 6 multiplexer ports.
+<suppressed ~751 debug messages>
+
+108.20. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:79ee240afdfd622112cdf973c4ee8d97acf4a125$paramod$d26ceb004b1c92f0df605bf9b3fc829369ac4a34\_90_shift_shiftx.
+<suppressed ~28 debug messages>
+Removed 0 unused cells and 11 unused wires.
+Using template $paramod$constmap:79ee240afdfd622112cdf973c4ee8d97acf4a125$paramod$d26ceb004b1c92f0df605bf9b3fc829369ac4a34\_90_shift_shiftx for cells of type $shift.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $adff.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000100001 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000100001 for cells of type $lcu.
+Using template $paramod\_90_fa\WIDTH=32'00000000000000000000000000000100 for cells of type $fa.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000100 for cells of type $lcu.
+Using extmapper simplemap for cells of type $ne.
+No more expansions possible.
+<suppressed ~786 debug messages>
+
+109. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tcam_switchable_ablation.
+<suppressed ~2648 debug messages>
+
+110. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tcam_switchable_ablation'.
+Computing hashes of 1165 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 1074 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 1038 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 1024 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 1006 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 977 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 924 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 898 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 896 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 894 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 892 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 890 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 888 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 886 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 884 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 882 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 880 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 878 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 876 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 874 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 872 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 870 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 868 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 866 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 864 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 862 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 860 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+<suppressed ~915 debug messages>
+Removed a total of 305 cells.
+
+111. Executing OPT_DFF pass (perform DFF optimizations).
+
+112. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tcam_switchable_ablation..
+Removed 94 unused cells and 556 unused wires.
+<suppressed ~95 debug messages>
+
+113. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tcam_switchable_ablation.
+<suppressed ~36 debug messages>
+
+114. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tcam_switchable_ablation'.
+Computing hashes of 730 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 728 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 725 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 720 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 713 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+<suppressed ~51 debug messages>
+Removed a total of 17 cells.
+
+115. Executing OPT_DFF pass (perform DFF optimizations).
+
+116. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tcam_switchable_ablation..
+Removed 0 unused cells and 34 unused wires.
+<suppressed ~1 debug messages>
+
+117. Executing ABC pass (technology mapping using ABC).
+
+117.1. Extracting gate netlist of module `\tcam_switchable_ablation' to `<abc-temp-dir>/input.blif'..
+
+117.1.1. Executed ABC.
+Extracted 600 gates and 700 wires to a netlist network with 98 inputs and 89 outputs.
+Running ABC script: <abc-temp-dir>/abc.script
+ABC: UC Berkeley, ABC 1.01 (compiled Sep 22 2026 15:09:22)
+ABC: abc 01> empty
+ABC: abc 01> source <abc-temp-dir>/abc.script
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &fraig -x 
+ABC: + &put 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + dc2 
+ABC: + dretime 
+ABC: + strash 
+ABC: + &get -n 
+ABC: + &dch -f 
+ABC: + &nf 
+ABC: + &put 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+ABC: 
+ABC: YOSYS_ABC_DONE 
+
+117.1.2. Re-integrating ABC results.
+ABC RESULTS:               AND cells:       45
+ABC RESULTS:            ANDNOT cells:       12
+ABC RESULTS:               MUX cells:       68
+ABC RESULTS:              NAND cells:       34
+ABC RESULTS:               NOR cells:       18
+ABC RESULTS:               NOT cells:        3
+ABC RESULTS:                OR cells:       32
+ABC RESULTS:             ORNOT cells:        3
+ABC RESULTS:              XNOR cells:       24
+ABC RESULTS:               XOR cells:        2
+ABC RESULTS:        internal signals:      513
+ABC RESULTS:           input signals:       98
+ABC RESULTS:          output signals:       89
+Removing temp directory.
+Removing global temp directory.
+
+118. Executing OPT pass (performing simple optimizations).
+
+118.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tcam_switchable_ablation.
+
+118.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tcam_switchable_ablation'.
+Computing hashes of 354 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 353 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+118.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+118.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tcam_switchable_ablation..
+Removed 0 unused cells and 304 unused wires.
+<suppressed ~5 debug messages>
+
+118.5. Finished fast OPT passes.
+
+119. Executing HIERARCHY pass (managing design hierarchy).
+
+119.1. Analyzing design hierarchy..
+Top module:  \tcam_switchable_ablation
+
+119.2. Analyzing design hierarchy..
+Top module:  \tcam_switchable_ablation
+Removed 0 unused modules.
+
+120. Executing CHECK pass (checking for obvious problems).
+Checking module tcam_switchable_ablation...
+Found and reported 0 problems.
+
+121. Printing statistics.
+
+=== tcam_switchable_ablation ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      276 wires
+      480 wire bits
+       39 public wires
+      243 public wire bits
+       13 ports
+       19 port bits
+      353 cells
+       12   $_ANDNOT_
+       44   $_AND_
+       43   $_DFFE_PP0P_
+       64   $_DFFE_PP_
+        6   $_DFF_PP0_
+       68   $_MUX_
+       34   $_NAND_
+       18   $_NOR_
+        3   $_NOT_
+        3   $_ORNOT_
+       32   $_OR_
+       24   $_XNOR_
+        2   $_XOR_
+
+122. Executing OPT pass (performing simple optimizations).
+
+122.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tcam_switchable_ablation.
+
+122.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tcam_switchable_ablation'.
+Computing hashes of 353 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Removed a total of 0 cells.
+
+122.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tcam_switchable_ablation..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+122.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tcam_switchable_ablation.
+Performed a total of 0 changes.
+
+122.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tcam_switchable_ablation'.
+Computing hashes of 353 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Removed a total of 0 cells.
+
+122.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $auto$ff.cc:337:slice$597 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [3], Q = \data_flat [19]).
+Adding EN signal on $auto$ff.cc:337:slice$596 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [2], Q = \data_flat [18]).
+Adding EN signal on $auto$ff.cc:337:slice$595 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [1], Q = \data_flat [17]).
+Adding EN signal on $auto$ff.cc:337:slice$594 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [0], Q = \data_flat [16]).
+Adding EN signal on $auto$ff.cc:337:slice$593 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [3], Q = \data_flat [15]).
+Adding EN signal on $auto$ff.cc:337:slice$592 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [2], Q = \data_flat [14]).
+Adding EN signal on $auto$ff.cc:337:slice$591 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [1], Q = \data_flat [13]).
+Adding EN signal on $auto$ff.cc:337:slice$590 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [0], Q = \data_flat [12]).
+Adding EN signal on $auto$ff.cc:337:slice$589 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [3], Q = \data_flat [11]).
+Adding EN signal on $auto$ff.cc:337:slice$588 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [2], Q = \data_flat [10]).
+Adding EN signal on $auto$ff.cc:337:slice$587 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [1], Q = \data_flat [9]).
+Adding EN signal on $auto$ff.cc:337:slice$586 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [0], Q = \data_flat [8]).
+Adding EN signal on $auto$ff.cc:337:slice$585 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [3], Q = \data_flat [7]).
+Adding EN signal on $auto$ff.cc:337:slice$584 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [2], Q = \data_flat [6]).
+Adding EN signal on $auto$ff.cc:337:slice$583 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [1], Q = \data_flat [5]).
+Adding EN signal on $auto$ff.cc:337:slice$582 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [0], Q = \data_flat [4]).
+Adding EN signal on $auto$ff.cc:337:slice$581 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [3], Q = \data_flat [3]).
+Adding EN signal on $auto$ff.cc:337:slice$580 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [2], Q = \data_flat [2]).
+Adding EN signal on $auto$ff.cc:337:slice$579 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [1], Q = \data_flat [1]).
+Adding EN signal on $auto$ff.cc:337:slice$578 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [0], Q = \data_flat [0]).
+Adding EN signal on $auto$ff.cc:337:slice$641 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [3], Q = \mask_flat [31]).
+Adding EN signal on $auto$ff.cc:337:slice$640 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [2], Q = \mask_flat [30]).
+Adding EN signal on $auto$ff.cc:337:slice$639 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [1], Q = \mask_flat [29]).
+Adding EN signal on $auto$ff.cc:337:slice$638 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [0], Q = \mask_flat [28]).
+Adding EN signal on $auto$ff.cc:337:slice$637 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [3], Q = \mask_flat [27]).
+Adding EN signal on $auto$ff.cc:337:slice$636 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [2], Q = \mask_flat [26]).
+Adding EN signal on $auto$ff.cc:337:slice$635 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [1], Q = \mask_flat [25]).
+Adding EN signal on $auto$ff.cc:337:slice$634 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [0], Q = \mask_flat [24]).
+Adding EN signal on $auto$ff.cc:337:slice$633 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [3], Q = \mask_flat [23]).
+Adding EN signal on $auto$ff.cc:337:slice$632 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [2], Q = \mask_flat [22]).
+Adding EN signal on $auto$ff.cc:337:slice$631 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [1], Q = \mask_flat [21]).
+Adding EN signal on $auto$ff.cc:337:slice$630 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [0], Q = \mask_flat [20]).
+Adding EN signal on $auto$ff.cc:337:slice$629 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [3], Q = \mask_flat [19]).
+Adding EN signal on $auto$ff.cc:337:slice$628 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [2], Q = \mask_flat [18]).
+Adding EN signal on $auto$ff.cc:337:slice$627 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [1], Q = \mask_flat [17]).
+Adding EN signal on $auto$ff.cc:337:slice$626 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [0], Q = \mask_flat [16]).
+Adding EN signal on $auto$ff.cc:337:slice$625 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [3], Q = \mask_flat [15]).
+Adding EN signal on $auto$ff.cc:337:slice$624 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [2], Q = \mask_flat [14]).
+Adding EN signal on $auto$ff.cc:337:slice$623 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [1], Q = \mask_flat [13]).
+Adding EN signal on $auto$ff.cc:337:slice$622 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [0], Q = \mask_flat [12]).
+Adding EN signal on $auto$ff.cc:337:slice$621 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [3], Q = \mask_flat [11]).
+Adding EN signal on $auto$ff.cc:337:slice$620 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [2], Q = \mask_flat [10]).
+Adding EN signal on $auto$ff.cc:337:slice$619 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [1], Q = \mask_flat [9]).
+Adding EN signal on $auto$ff.cc:337:slice$618 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [0], Q = \mask_flat [8]).
+Adding EN signal on $auto$ff.cc:337:slice$617 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [3], Q = \mask_flat [7]).
+Adding EN signal on $auto$ff.cc:337:slice$616 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [2], Q = \mask_flat [6]).
+Adding EN signal on $auto$ff.cc:337:slice$615 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [1], Q = \mask_flat [5]).
+Adding EN signal on $auto$ff.cc:337:slice$614 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [0], Q = \mask_flat [4]).
+Adding EN signal on $auto$ff.cc:337:slice$613 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [3], Q = \mask_flat [3]).
+Adding EN signal on $auto$ff.cc:337:slice$612 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [2], Q = \mask_flat [2]).
+Adding EN signal on $auto$ff.cc:337:slice$611 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [1], Q = \mask_flat [1]).
+Adding EN signal on $auto$ff.cc:337:slice$610 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_mask_lat [0], Q = \mask_flat [0]).
+Adding EN signal on $auto$ff.cc:337:slice$609 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [3], Q = \data_flat [31]).
+Adding EN signal on $auto$ff.cc:337:slice$608 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [2], Q = \data_flat [30]).
+Adding EN signal on $auto$ff.cc:337:slice$607 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [1], Q = \data_flat [29]).
+Adding EN signal on $auto$ff.cc:337:slice$606 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [0], Q = \data_flat [28]).
+Adding EN signal on $auto$ff.cc:337:slice$605 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [3], Q = \data_flat [27]).
+Adding EN signal on $auto$ff.cc:337:slice$604 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [2], Q = \data_flat [26]).
+Adding EN signal on $auto$ff.cc:337:slice$603 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [1], Q = \data_flat [25]).
+Adding EN signal on $auto$ff.cc:337:slice$602 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [0], Q = \data_flat [24]).
+Adding EN signal on $auto$ff.cc:337:slice$601 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [3], Q = \data_flat [23]).
+Adding EN signal on $auto$ff.cc:337:slice$600 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [2], Q = \data_flat [22]).
+Adding EN signal on $auto$ff.cc:337:slice$599 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [1], Q = \data_flat [21]).
+Adding EN signal on $auto$ff.cc:337:slice$598 ($_DFFE_PP_) from module tcam_switchable_ablation (D = \wr_data_lat [0], Q = \data_flat [20]).
+
+122.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tcam_switchable_ablation..
+Removed 64 unused cells and 128 unused wires.
+<suppressed ~65 debug messages>
+
+122.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tcam_switchable_ablation.
+
+122.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+122.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tcam_switchable_ablation..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+122.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tcam_switchable_ablation.
+Performed a total of 0 changes.
+
+122.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tcam_switchable_ablation'.
+Computing hashes of 353 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Computing hashes of 297 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+<suppressed ~168 debug messages>
+Removed a total of 56 cells.
+
+122.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+122.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tcam_switchable_ablation..
+Removed 0 unused cells and 56 unused wires.
+<suppressed ~1 debug messages>
+
+122.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tcam_switchable_ablation.
+
+122.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+122.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \tcam_switchable_ablation..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+122.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \tcam_switchable_ablation.
+Performed a total of 0 changes.
+
+122.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\tcam_switchable_ablation'.
+Computing hashes of 297 cells of `\tcam_switchable_ablation'.
+Finding duplicate cells in `\tcam_switchable_ablation'.
+Removed a total of 0 cells.
+
+122.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+122.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tcam_switchable_ablation..
+
+122.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module tcam_switchable_ablation.
+
+122.23. Finished fast OPT passes. (There is nothing left to do.)
+
+123. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tcam_switchable_ablation..
+Removed 0 unused cells and 9 unused wires.
+<suppressed ~9 debug messages>
+{
+   "creator": "Yosys 0.69 (git sha1 9f75ca1f9, Release, GNU /usr/bin/c++ 13.3.0)",
+   "invocation": "stat -json -liberty /foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/tmp/28abde4ffb2146d8ac87348b3e670e0d.lib -liberty /foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/tmp/fd0e66af85ba4faeaa9be8d0ea28ad15.lib -liberty /foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/tmp/1215fa6a3aa848edad3fb1c0ea34c289.lib -liberty /foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/tmp/4d7f2c4c689d4ad79cebb060e30c2d34.lib -liberty /foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/tmp/e771fd6aeff446a0b2e8937e7ee722d1.lib -liberty /foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/tmp/d7667345b93844ebb385f3d1781f4800.lib -liberty /foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/tmp/a3276fda5e1b449ca1957b5959dc1e5b.lib -liberty /foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/tmp/e325ca812feb41c48522896b7bf414c4.lib ",
+   "modules": {
+      "\\tcam_switchable_ablation": {
+         "num_wires":         211,
+         "num_wire_bits":     310,
+         "num_pub_wires":     30,
+         "num_pub_wire_bits": 129,
+         "num_ports":         13,
+         "num_port_bits":     19,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         297,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 12,
+            "$_AND_": 52,
+            "$_DFFE_PP0P_": 43,
+            "$_DFFE_PP_": 64,
+            "$_DFF_PP0_": 6,
+            "$_MUX_": 4,
+            "$_NAND_": 34,
+            "$_NOR_": 18,
+            "$_NOT_": 3,
+            "$_ORNOT_": 3,
+            "$_OR_": 32,
+            "$_XNOR_": 24,
+            "$_XOR_": 2
+         }
+      }
+   },
+      "design": {
+         "num_wires":         211,
+         "num_wire_bits":     310,
+         "num_pub_wires":     30,
+         "num_pub_wire_bits": 129,
+         "num_ports":         13,
+         "num_port_bits":     19,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         297,
+         "num_submodules":       0,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 12,
+            "$_AND_": 52,
+            "$_DFFE_PP0P_": 43,
+            "$_DFFE_PP_": 64,
+            "$_DFF_PP0_": 6,
+            "$_MUX_": 4,
+            "$_NAND_": 34,
+            "$_NOR_": 18,
+            "$_NOT_": 3,
+            "$_ORNOT_": 3,
+            "$_OR_": 32,
+            "$_XNOR_": 24,
+            "$_XOR_": 2
+         }
+      }
+}
+
+124. Printing statistics.
+
+=== tcam_switchable_ablation ===
+
+        +----------Local Count, excluding submodules.
+        | 
+      211 wires
+      310 wire bits
+       30 public wires
+      129 public wire bits
+       13 ports
+       19 port bits
+      297 cells
+       12   $_ANDNOT_
+       52   $_AND_
+       43   $_DFFE_PP0P_
+       64   $_DFFE_PP_
+        6   $_DFF_PP0_
+        4   $_MUX_
+       34   $_NAND_
+       18   $_NOR_
+        3   $_NOT_
+        3   $_ORNOT_
+       32   $_OR_
+       24   $_XNOR_
+        2   $_XOR_
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_DFFE_PP0P_ is unknown!
+   Area for cell type $_DFFE_PP_ is unknown!
+   Area for cell type $_DFF_PP0_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+[INFO] Applying tri-state buffer mapping from '/foss/pdks/sky130A/libs.tech/librelane/sky130_fd_sc_hd/tribuff_map.v'…
+
+125. Executing TECHMAP pass (map to technology primitives).
+
+125.1. Executing Verilog-2005 frontend: /foss/pdks/sky130A/libs.tech/librelane/sky130_fd_sc_hd/tribuff_map.v
+Parsing Verilog input from `/foss/pdks/sky130A/libs.tech/librelane/sky130_fd_sc_hd/tribuff_map.v' to AST representation.
+Generating RTLIL representation for module `$_TBUF_'.
+Successfully finished Verilog frontend.
+
+125.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+126. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+[INFO] Applying latch mapping from '/foss/pdks/sky130A/libs.tech/librelane/sky130_fd_sc_hd/latch_map.v'…
+
+127. Executing TECHMAP pass (map to technology primitives).
+
+127.1. Executing Verilog-2005 frontend: /foss/pdks/sky130A/libs.tech/librelane/sky130_fd_sc_hd/latch_map.v
+Parsing Verilog input from `/foss/pdks/sky130A/libs.tech/librelane/sky130_fd_sc_hd/latch_map.v' to AST representation.
+Generating RTLIL representation for module `$_DLATCH_P_'.
+Generating RTLIL representation for module `$_DLATCH_N_'.
+Successfully finished Verilog frontend.
+
+127.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+128. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+129. Executing DFFLIBMAP pass (mapping DFF/DLATCH cells to sequential cells from liberty file).
+  cell sky130_fd_sc_hd__dfxtp_1 (noninv, pins=3, area=20.02) is a direct match for cell type $_DFF_P_.
+  cell sky130_fd_sc_hd__dfrtn_1 (noninv, pins=4, area=25.02) is a direct match for cell type $_DFF_NN0_.
+  cell sky130_fd_sc_hd__dfrtp_1 (noninv, pins=4, area=25.02) is a direct match for cell type $_DFF_PN0_.
+  cell sky130_fd_sc_hd__dfstp_1 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN1_.
+  cell sky130_fd_sc_hd__edfxtp_1 (noninv, pins=4, area=30.03) is a direct match for cell type $_DFFE_PP_.
+  cell sky130_fd_sc_hd__dfbbn_1 (noninv, pins=6, area=32.53) is a direct match for cell type $_DFFSR_NNN_.
+  cell sky130_fd_sc_hd__dfbbp_1 (noninv, pins=6, area=32.53) is a direct match for cell type $_DFFSR_PNN_.
+  cell sky130_fd_sc_hd__dlxtn_1 (noninv, pins=3, area=15.01) is a direct match for cell type $_DLATCH_N_.
+  cell sky130_fd_sc_hd__dlxtp_1 (noninv, pins=3, area=15.01) is a direct match for cell type $_DLATCH_P_.
+  cell sky130_fd_sc_hd__dlrtn_1 (noninv, pins=4, area=17.52) is a direct match for cell type $_DLATCH_NN0_.
+  cell sky130_fd_sc_hd__dlrtp_1 (noninv, pins=4, area=16.27) is a direct match for cell type $_DLATCH_PN0_.
+  final dff/dlatch cell mappings:
+    unmapped dff/dlatch cell: $_DFF_N_
+    \sky130_fd_sc_hd__dfxtp_1 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+    \sky130_fd_sc_hd__dfrtn_1 _DFF_NN0_ (.CLK_N( C), .D( D), .Q( Q), .RESET_B( R));
+    unmapped dff/dlatch cell: $_DFF_NN1_
+    unmapped dff/dlatch cell: $_DFF_NP0_
+    unmapped dff/dlatch cell: $_DFF_NP1_
+    \sky130_fd_sc_hd__dfrtp_1 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RESET_B( R));
+    \sky130_fd_sc_hd__dfstp_1 _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .SET_B( R));
+    unmapped dff/dlatch cell: $_DFF_PP0_
+    unmapped dff/dlatch cell: $_DFF_PP1_
+    unmapped dff/dlatch cell: $_DFFE_NN_
+    unmapped dff/dlatch cell: $_DFFE_NP_
+    unmapped dff/dlatch cell: $_DFFE_PN_
+    \sky130_fd_sc_hd__edfxtp_1 _DFFE_PP_ (.CLK( C), .D( D), .DE( E), .Q( Q));
+    \sky130_fd_sc_hd__dfbbn_1 _DFFSR_NNN_ (.CLK_N( C), .D( D), .Q( Q), .Q_N(~Q), .RESET_B( R), .SET_B( S));
+    unmapped dff/dlatch cell: $_DFFSR_NNP_
+    unmapped dff/dlatch cell: $_DFFSR_NPN_
+    unmapped dff/dlatch cell: $_DFFSR_NPP_
+    \sky130_fd_sc_hd__dfbbp_1 _DFFSR_PNN_ (.CLK( C), .D( D), .Q( Q), .Q_N(~Q), .RESET_B( R), .SET_B( S));
+    unmapped dff/dlatch cell: $_DFFSR_PNP_
+    unmapped dff/dlatch cell: $_DFFSR_PPN_
+    unmapped dff/dlatch cell: $_DFFSR_PPP_
+    \sky130_fd_sc_hd__dlxtn_1 _DLATCH_N_ (.D( D), .GATE_N( E), .Q( Q));
+    \sky130_fd_sc_hd__dlxtp_1 _DLATCH_P_ (.D( D), .GATE( E), .Q( Q));
+    \sky130_fd_sc_hd__dlrtn_1 _DLATCH_NN0_ (.D( D), .GATE_N( E), .Q( Q), .RESET_B( R));
+    unmapped dff/dlatch cell: $_DLATCH_NN1_
+    unmapped dff/dlatch cell: $_DLATCH_NP0_
+    unmapped dff/dlatch cell: $_DLATCH_NP1_
+    \sky130_fd_sc_hd__dlrtp_1 _DLATCH_PN0_ (.D( D), .GATE( E), .Q( Q), .RESET_B( R));
+    unmapped dff/dlatch cell: $_DLATCH_PN1_
+    unmapped dff/dlatch cell: $_DLATCH_PP0_
+    unmapped dff/dlatch cell: $_DLATCH_PP1_
+    unmapped dff/dlatch cell: $_DLATCHSR_NNN_
+    unmapped dff/dlatch cell: $_DLATCHSR_NNP_
+    unmapped dff/dlatch cell: $_DLATCHSR_NPN_
+    unmapped dff/dlatch cell: $_DLATCHSR_NPP_
+    unmapped dff/dlatch cell: $_DLATCHSR_PNN_
+    unmapped dff/dlatch cell: $_DLATCHSR_PNP_
+    unmapped dff/dlatch cell: $_DLATCHSR_PPN_
+    unmapped dff/dlatch cell: $_DLATCHSR_PPP_
+
+129.1. Executing DFFLEGALIZE pass (convert FFs and LATCHes to types supported by the target).
+Mapping DFF/DLATCH cells in module `\tcam_switchable_ablation':
+  mapped 64 $_DFFE_PP_ cells to \sky130_fd_sc_hd__edfxtp_1 cells.
+  mapped 49 $_DFF_PN0_ cells to \sky130_fd_sc_hd__dfrtp_1 cells.
+{
+   "creator": "Yosys 0.69 (git sha1 9f75ca1f9, Release, GNU /usr/bin/c++ 13.3.0)",
+   "invocation": "stat -json -liberty /foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/tmp/28abde4ffb2146d8ac87348b3e670e0d.lib -liberty /foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/tmp/fd0e66af85ba4faeaa9be8d0ea28ad15.lib -liberty /foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/tmp/1215fa6a3aa848edad3fb1c0ea34c289.lib -liberty /foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/tmp/4d7f2c4c689d4ad79cebb060e30c2d34.lib -liberty /foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/tmp/e771fd6aeff446a0b2e8937e7ee722d1.lib -liberty /foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/tmp/d7667345b93844ebb385f3d1781f4800.lib -liberty /foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/tmp/a3276fda5e1b449ca1957b5959dc1e5b.lib -liberty /foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/tmp/e325ca812feb41c48522896b7bf414c4.lib ",
+   "modules": {
+      "\\tcam_switchable_ablation": {
+         "num_wires":         303,
+         "num_wire_bits":     402,
+         "num_pub_wires":     30,
+         "num_pub_wire_bits": 129,
+         "num_ports":         13,
+         "num_port_bits":     19,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         389,
+         "num_submodules":       0,
+         "area":              3148.019200,
+         "sequential_area":    3148.019200,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 12,
+            "$_AND_": 52,
+            "$_MUX_": 47,
+            "$_NAND_": 34,
+            "$_NOR_": 18,
+            "$_NOT_": 52,
+            "$_ORNOT_": 3,
+            "$_OR_": 32,
+            "$_XNOR_": 24,
+            "$_XOR_": 2,
+            "sky130_fd_sc_hd__dfrtp_1": 49,
+            "sky130_fd_sc_hd__edfxtp_1": 64
+         }
+      }
+   },
+      "design": {
+         "num_wires":         303,
+         "num_wire_bits":     402,
+         "num_pub_wires":     30,
+         "num_pub_wire_bits": 129,
+         "num_ports":         13,
+         "num_port_bits":     19,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         389,
+         "num_submodules":       0,
+         "area":              3148.019200,
+         "sequential_area":    3148.019200,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 12,
+            "$_AND_": 52,
+            "$_MUX_": 47,
+            "$_NAND_": 34,
+            "$_NOR_": 18,
+            "$_NOT_": 52,
+            "$_ORNOT_": 3,
+            "$_OR_": 32,
+            "$_XNOR_": 24,
+            "$_XOR_": 2,
+            "sky130_fd_sc_hd__dfrtp_1": 49,
+            "sky130_fd_sc_hd__edfxtp_1": 64
+         }
+      }
+}
+
+130. Printing statistics.
+
+=== tcam_switchable_ablation ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      303        - wires
+      402        - wire bits
+       30        - public wires
+      129        - public wire bits
+       13        - ports
+       19        - port bits
+      389 3.15E+03 cells
+       12        -   $_ANDNOT_
+       52        -   $_AND_
+       47        -   $_MUX_
+       34        -   $_NAND_
+       18        -   $_NOR_
+       52        -   $_NOT_
+        3        -   $_ORNOT_
+       32        -   $_OR_
+       24        -   $_XNOR_
+        2        -   $_XOR_
+       49 1.23E+03   sky130_fd_sc_hd__dfrtp_1
+       64 1.92E+03   sky130_fd_sc_hd__edfxtp_1
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+
+   Chip area for module '\tcam_switchable_ablation': 3148.019200
+     of which used for sequential elements: 3148.019200 (100.00%)
+
+[INFO] Using generated ABC strategy script '/foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/06-yosys-synthesis/AREA_0.abc'…
+
+131. Executing ABC pass (technology mapping using ABC).
+
+131.1. Extracting gate netlist of module `\tcam_switchable_ablation' to `/tmp/yosys-abc-Ke45wf/input.blif'..
+
+131.1.1. Executed ABC.
+Extracted 276 gates and 395 wires to a netlist network with 119 inputs and 104 outputs.
+Running ABC script: /tmp/yosys-abc-Ke45wf/abc.script
+ABC: UC Berkeley, ABC 1.01 (compiled Sep 22 2026 15:09:22)
+ABC: abc 01> empty
+ABC: abc 01> source /tmp/yosys-abc-Ke45wf/abc.script
+ABC: + read_blif /tmp/yosys-abc-Ke45wf/input.blif 
+ABC: + read_scl /tmp/yosys-liberty-scl-cache-1000/yosys_merged_c94d2b44.scl 
+ABC: Warning: Detected 9 multi-output cells (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + read_constr -v /foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/06-yosys-synthesis/synthesis.abc.sdc 
+ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_2/Y".
+ABC: Setting output load to be 33.442001.
+ABC: + source /foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/06-yosys-synthesis/AREA_0.abc 
+ABC: Error: The network is combinational.
+ABC: Cannot find the default PI driving cell (sky130_fd_sc_hd__inv_2/Y) in the library.
+ABC: WireLoad = "none"  Gates =    210 ( 24.8 %)   Cap = 13.9 ff (  7.6 %)   Area =     1244.94 ( 76.2 %)   Delay =  1797.62 ps  ( 15.7 %)               
+ABC: Path  0 --      51 : 0    2 pi                        A =   0.00  Df =   0.0   -0.0 ps  S =   0.0 ps  Cin =  0.0 ff  Cout =   4.2 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --     348 : 3    1 sky130_fd_sc_hd__a21boi_0 A =   7.51  Df = 124.3  -30.8 ps  S = 110.5 ps  Cin =  1.7 ff  Cout =   1.7 ff  Cmax =  48.5 ff  G =   96  
+ABC: Path  2 --     349 : 3    2 sky130_fd_sc_hd__o21ai_0  A =   5.00  Df = 234.6  -51.2 ps  S = 194.1 ps  Cin =  1.7 ff  Cout =   4.9 ff  Cmax =  50.4 ff  G =  274  
+ABC: Path  3 --     350 : 2    2 sky130_fd_sc_hd__nand2_1  A =   3.75  Df = 320.6  -52.1 ps  S =  58.4 ps  Cin =  2.3 ff  Cout =   4.0 ff  Cmax = 166.6 ff  G =  166  
+ABC: Path  4 --     363 : 2    4 sky130_fd_sc_hd__or2_0    A =   6.26  Df = 511.2  -13.6 ps  S = 164.5 ps  Cin =  1.5 ff  Cout =  10.0 ff  Cmax = 100.7 ff  G =  621  
+ABC: Path  5 --     370 : 3    2 sky130_fd_sc_hd__nor3_1   A =   5.00  Df =1291.8 -603.2 ps  S =1003.7 ps  Cin =  2.4 ff  Cout =  35.0 ff  Cmax =  52.2 ff  G = 1466  
+ABC: Path  6 --     371 : 2    1 sky130_fd_sc_hd__or2_0    A =   6.26  Df =1797.6 -674.4 ps  S = 509.1 ps  Cin =  1.5 ff  Cout =  33.4 ff  Cmax = 100.7 ff  G = 2215  
+ABC: Start-point = pi50 (\mode_q).  End-point = po32 ($auto$rtlil.cc:3497:MuxGate$5449).
+ABC: netlist                       : i/o =  119/  104  lat =    0  nd =   210  edge =    494  area =1244.46  delay = 6.00  lev = 6
+ABC: + write_blif /tmp/yosys-abc-Ke45wf/output.blif 
+ABC:                                                                                
+ABC: YOSYS_ABC_DONE 
+
+131.1.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__a21boi_0 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a21o_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a21oi_1 cells:       27
+ABC RESULTS:   sky130_fd_sc_hd__a311oi_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__a31oi_1 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__and4b_1 cells:        7
+ABC RESULTS:   sky130_fd_sc_hd__inv_1 cells:       52
+ABC RESULTS:   sky130_fd_sc_hd__mux2_1 cells:       26
+ABC RESULTS:   sky130_fd_sc_hd__nand2_1 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__nand2b_1 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__nand3_1 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__nand3b_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nor2_1 cells:       13
+ABC RESULTS:   sky130_fd_sc_hd__nor2b_1 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__nor3_1 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__nor3b_1 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__nor4_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o21a_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o21ai_0 cells:       34
+ABC RESULTS:   sky130_fd_sc_hd__o21bai_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__o31ai_1 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__or2_0 cells:        9
+ABC RESULTS:   sky130_fd_sc_hd__xnor2_1 cells:        9
+ABC RESULTS:   sky130_fd_sc_hd__xor2_1 cells:        1
+ABC RESULTS:        internal signals:      172
+ABC RESULTS:           input signals:      119
+ABC RESULTS:          output signals:      104
+Removing temp directory.
+Removing global temp directory.
+
+132. Executing SETUNDEF pass (replace undef values with defined constants).
+
+133. Executing HILOMAP pass (mapping to constant drivers).
+
+134. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+135. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \tcam_switchable_ablation..
+Removed 0 unused cells and 395 unused wires.
+<suppressed ~4 debug messages>
+
+136. Executing INSBUF pass (insert buffer cells for connected wires).
+Add tcam_switchable_ablation/$auto$insbuf.cc:97:execute$5799: \pump_phase -> \pump_activity [0]
+Add tcam_switchable_ablation/$auto$insbuf.cc:97:execute$5800: \mode_q -> \pump_activity [1]
+
+137. Executing CHECK pass (checking for obvious problems).
+Checking module tcam_switchable_ablation...
+Found and reported 0 problems.
+{
+   "creator": "Yosys 0.69 (git sha1 9f75ca1f9, Release, GNU /usr/bin/c++ 13.3.0)",
+   "invocation": "stat -json -liberty /foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/tmp/28abde4ffb2146d8ac87348b3e670e0d.lib -liberty /foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/tmp/fd0e66af85ba4faeaa9be8d0ea28ad15.lib -liberty /foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/tmp/1215fa6a3aa848edad3fb1c0ea34c289.lib -liberty /foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/tmp/4d7f2c4c689d4ad79cebb060e30c2d34.lib -liberty /foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/tmp/e771fd6aeff446a0b2e8937e7ee722d1.lib -liberty /foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/tmp/d7667345b93844ebb385f3d1781f4800.lib -liberty /foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/tmp/a3276fda5e1b449ca1957b5959dc1e5b.lib -liberty /foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/tmp/e325ca812feb41c48522896b7bf414c4.lib ",
+   "modules": {
+      "\\tcam_switchable_ablation": {
+         "num_wires":         330,
+         "num_wire_bits":     336,
+         "num_pub_wires":     120,
+         "num_pub_wire_bits": 126,
+         "num_ports":         13,
+         "num_port_bits":     19,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         325,
+         "num_submodules":       0,
+         "area":              4402.972800,
+         "sequential_area":    3148.019200,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__a21boi_0": 1,
+            "sky130_fd_sc_hd__a21o_1": 1,
+            "sky130_fd_sc_hd__a21oi_1": 27,
+            "sky130_fd_sc_hd__a311oi_1": 1,
+            "sky130_fd_sc_hd__a31oi_1": 2,
+            "sky130_fd_sc_hd__and4b_1": 7,
+            "sky130_fd_sc_hd__buf_2": 2,
+            "sky130_fd_sc_hd__dfrtp_1": 49,
+            "sky130_fd_sc_hd__edfxtp_1": 64,
+            "sky130_fd_sc_hd__inv_1": 52,
+            "sky130_fd_sc_hd__mux2_1": 26,
+            "sky130_fd_sc_hd__nand2_1": 6,
+            "sky130_fd_sc_hd__nand2b_1": 4,
+            "sky130_fd_sc_hd__nand3_1": 3,
+            "sky130_fd_sc_hd__nand3b_1": 1,
+            "sky130_fd_sc_hd__nor2_1": 13,
+            "sky130_fd_sc_hd__nor2b_1": 3,
+            "sky130_fd_sc_hd__nor3_1": 4,
+            "sky130_fd_sc_hd__nor3b_1": 2,
+            "sky130_fd_sc_hd__nor4_1": 1,
+            "sky130_fd_sc_hd__o21a_1": 1,
+            "sky130_fd_sc_hd__o21ai_0": 34,
+            "sky130_fd_sc_hd__o21bai_1": 1,
+            "sky130_fd_sc_hd__o31ai_1": 1,
+            "sky130_fd_sc_hd__or2_0": 9,
+            "sky130_fd_sc_hd__xnor2_1": 9,
+            "sky130_fd_sc_hd__xor2_1": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         330,
+         "num_wire_bits":     336,
+         "num_pub_wires":     120,
+         "num_pub_wire_bits": 126,
+         "num_ports":         13,
+         "num_port_bits":     19,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         325,
+         "num_submodules":       0,
+         "area":              4402.972800,
+         "sequential_area":    3148.019200,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__a21boi_0": 1,
+            "sky130_fd_sc_hd__a21o_1": 1,
+            "sky130_fd_sc_hd__a21oi_1": 27,
+            "sky130_fd_sc_hd__a311oi_1": 1,
+            "sky130_fd_sc_hd__a31oi_1": 2,
+            "sky130_fd_sc_hd__and4b_1": 7,
+            "sky130_fd_sc_hd__buf_2": 2,
+            "sky130_fd_sc_hd__dfrtp_1": 49,
+            "sky130_fd_sc_hd__edfxtp_1": 64,
+            "sky130_fd_sc_hd__inv_1": 52,
+            "sky130_fd_sc_hd__mux2_1": 26,
+            "sky130_fd_sc_hd__nand2_1": 6,
+            "sky130_fd_sc_hd__nand2b_1": 4,
+            "sky130_fd_sc_hd__nand3_1": 3,
+            "sky130_fd_sc_hd__nand3b_1": 1,
+            "sky130_fd_sc_hd__nor2_1": 13,
+            "sky130_fd_sc_hd__nor2b_1": 3,
+            "sky130_fd_sc_hd__nor3_1": 4,
+            "sky130_fd_sc_hd__nor3b_1": 2,
+            "sky130_fd_sc_hd__nor4_1": 1,
+            "sky130_fd_sc_hd__o21a_1": 1,
+            "sky130_fd_sc_hd__o21ai_0": 34,
+            "sky130_fd_sc_hd__o21bai_1": 1,
+            "sky130_fd_sc_hd__o31ai_1": 1,
+            "sky130_fd_sc_hd__or2_0": 9,
+            "sky130_fd_sc_hd__xnor2_1": 9,
+            "sky130_fd_sc_hd__xor2_1": 1
+         }
+      }
+}
+
+138. Printing statistics.
+
+=== tcam_switchable_ablation ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+      330        - wires
+      336        - wire bits
+      120        - public wires
+      126        - public wire bits
+       13        - ports
+       19        - port bits
+      325  4.4E+03 cells
+        1    7.507   sky130_fd_sc_hd__a21boi_0
+        1    7.507   sky130_fd_sc_hd__a21o_1
+       27   135.13   sky130_fd_sc_hd__a21oi_1
+        1    8.758   sky130_fd_sc_hd__a311oi_1
+        2   12.512   sky130_fd_sc_hd__a31oi_1
+        7   70.067   sky130_fd_sc_hd__and4b_1
+        2    10.01   sky130_fd_sc_hd__buf_2
+       49 1.23E+03   sky130_fd_sc_hd__dfrtp_1
+       64 1.92E+03   sky130_fd_sc_hd__edfxtp_1
+       52  195.187   sky130_fd_sc_hd__inv_1
+       26  292.781   sky130_fd_sc_hd__mux2_1
+        6   22.522   sky130_fd_sc_hd__nand2_1
+        4   25.024   sky130_fd_sc_hd__nand2b_1
+        3   15.014   sky130_fd_sc_hd__nand3_1
+        1    7.507   sky130_fd_sc_hd__nand3b_1
+       13   48.797   sky130_fd_sc_hd__nor2_1
+        3   18.768   sky130_fd_sc_hd__nor2b_1
+        4   20.019   sky130_fd_sc_hd__nor3_1
+        2   15.014   sky130_fd_sc_hd__nor3b_1
+        1    6.256   sky130_fd_sc_hd__nor4_1
+        1    7.507   sky130_fd_sc_hd__o21a_1
+       34  170.163   sky130_fd_sc_hd__o21ai_0
+        1    7.507   sky130_fd_sc_hd__o21bai_1
+        1    7.507   sky130_fd_sc_hd__o31ai_1
+        9   56.304   sky130_fd_sc_hd__or2_0
+        9   78.826   sky130_fd_sc_hd__xnor2_1
+        1    8.758   sky130_fd_sc_hd__xor2_1
+
+   Chip area for module '\tcam_switchable_ablation': 4402.972800
+     of which used for sequential elements: 3148.019200 (71.50%)
+
+139. Executing Verilog backend.
+Dumping module `\tcam_switchable_ablation'.
+
+140. Executing JSON backend.

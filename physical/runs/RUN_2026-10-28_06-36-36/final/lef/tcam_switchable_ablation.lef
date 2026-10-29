@@ -1,0 +1,245 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO tcam_switchable_ablation
+  CLASS BLOCK ;
+  FOREIGN tcam_switchable_ablation ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 104.880 BY 115.600 ;
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 24.340 10.640 25.940 103.600 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.520 30.030 99.360 31.630 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 21.040 10.640 22.640 103.600 ;
+    END
+    PORT
+      LAYER met5 ;
+        RECT 5.520 26.730 99.360 28.330 ;
+    END
+  END VPWR
+  PIN clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.852000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 95.240 0.600 95.840 ;
+    END
+  END clk
+  PIN load_en
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.159000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 63.960 0.600 64.560 ;
+    END
+  END load_en
+  PIN match_addr[0]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 104.280 68.040 104.880 68.640 ;
+    END
+  END match_addr[0]
+  PIN match_addr[1]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 104.280 69.400 104.880 70.000 ;
+    END
+  END match_addr[1]
+  PIN match_addr[2]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 104.280 80.280 104.880 80.880 ;
+    END
+  END match_addr[2]
+  PIN match_valid
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 104.280 81.640 104.880 82.240 ;
+    END
+  END match_valid
+  PIN mode
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.159000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 73.480 0.600 74.080 ;
+    END
+  END mode
+  PIN pump_activity[0]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 76.200 0.600 76.800 ;
+    END
+  END pump_activity[0]
+  PIN pump_activity[1]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 74.840 0.600 75.440 ;
+    END
+  END pump_activity[1]
+  PIN rst
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.159000 ;
+    PORT
+      LAYER met3 ;
+        RECT 104.280 16.360 104.880 16.960 ;
+    END
+  END rst
+  PIN search_done
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met3 ;
+        RECT 104.280 91.160 104.880 91.760 ;
+    END
+  END search_done
+  PIN search_en
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.159000 ;
+    PORT
+      LAYER met3 ;
+        RECT 104.280 89.800 104.880 90.400 ;
+    END
+  END search_en
+  PIN search_key[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.159000 ;
+    PORT
+      LAYER met3 ;
+        RECT 104.280 83.000 104.880 83.600 ;
+    END
+  END search_key[0]
+  PIN search_key[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.159000 ;
+    PORT
+      LAYER met3 ;
+        RECT 104.280 77.560 104.880 78.160 ;
+    END
+  END search_key[1]
+  PIN search_key[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.159000 ;
+    PORT
+      LAYER met2 ;
+        RECT 77.370 115.320 77.650 115.600 ;
+    END
+  END search_key[2]
+  PIN search_key[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.159000 ;
+    PORT
+      LAYER met2 ;
+        RECT 73.690 115.320 73.970 115.600 ;
+    END
+  END search_key[3]
+  PIN serial_clk_en
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.159000 ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 81.640 0.600 82.240 ;
+    END
+  END serial_clk_en
+  PIN serial_in
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.159000 ;
+    PORT
+      LAYER met2 ;
+        RECT 21.250 0.000 21.530 0.280 ;
+    END
+  END serial_in
+  PIN shift_done
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.445500 ;
+    PORT
+      LAYER met2 ;
+        RECT 30.450 115.320 30.730 115.600 ;
+    END
+  END shift_done
+  OBS
+      LAYER nwell ;
+        RECT 5.330 10.795 99.550 103.445 ;
+      LAYER li1 ;
+        RECT 5.520 10.795 99.360 103.445 ;
+      LAYER met1 ;
+        RECT 1.450 10.640 99.660 103.600 ;
+      LAYER met2 ;
+        RECT 1.470 115.040 30.170 115.320 ;
+        RECT 31.010 115.040 73.410 115.320 ;
+        RECT 74.250 115.040 77.090 115.320 ;
+        RECT 77.930 115.040 97.890 115.320 ;
+        RECT 1.470 0.560 97.890 115.040 ;
+        RECT 1.470 0.280 20.970 0.560 ;
+        RECT 21.810 0.280 97.890 0.560 ;
+      LAYER met3 ;
+        RECT 0.600 96.240 104.280 103.525 ;
+        RECT 1.000 94.840 104.280 96.240 ;
+        RECT 0.600 92.160 104.280 94.840 ;
+        RECT 0.600 89.400 103.880 92.160 ;
+        RECT 0.600 84.000 104.280 89.400 ;
+        RECT 0.600 82.640 103.880 84.000 ;
+        RECT 1.000 81.240 103.880 82.640 ;
+        RECT 0.600 79.880 103.880 81.240 ;
+        RECT 0.600 78.560 104.280 79.880 ;
+        RECT 0.600 77.200 103.880 78.560 ;
+        RECT 1.000 77.160 103.880 77.200 ;
+        RECT 1.000 73.080 104.280 77.160 ;
+        RECT 0.600 70.400 104.280 73.080 ;
+        RECT 0.600 67.640 103.880 70.400 ;
+        RECT 0.600 64.960 104.280 67.640 ;
+        RECT 1.000 63.560 104.280 64.960 ;
+        RECT 0.600 17.360 104.280 63.560 ;
+        RECT 0.600 15.960 103.880 17.360 ;
+        RECT 0.600 10.715 104.280 15.960 ;
+      LAYER met4 ;
+        RECT 61.015 22.615 61.345 58.305 ;
+  END
+END tcam_switchable_ablation
+END LIBRARY
+

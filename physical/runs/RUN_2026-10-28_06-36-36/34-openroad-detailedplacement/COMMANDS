@@ -1,0 +1,1 @@
+openroad -exit -threads None -no_splash -metrics /foss/designs/silicluster_v3_tcam_switchable/physical/runs/RUN_2026-10-28_06-36-36/34-openroad-detailedplacement/or_metrics_out.json /usr/local/lib/python3.12/dist-packages/librelane/scripts/openroad/dpl.tcl

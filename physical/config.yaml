@@ -1,0 +1,7 @@
+DESIGN_NAME: tcam_switchable_ablation
+VERILOG_FILES:
+  - dir::../rtl/tcam_switchable_ablation.v
+CLOCK_PORT: clk
+CLOCK_PERIOD: 100
+PNR_SDC_FILE: dir::src/impl.sdc
+SIGNOFF_SDC_FILE: dir::src/impl.sdc
